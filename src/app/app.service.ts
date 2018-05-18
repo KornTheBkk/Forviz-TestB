@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class AppService {
 
-  private url: string = 'http://uinames.com/api/?ext&amount=25';
+  private url: string = 'https://uinames.com/api/?ext&amount=25';
 
   constructor(private http: HttpClient) { }
 
