@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.items>div {
+.items > div {
     border: 1px solid #CCC;
     padding: 5px;
 }
@@ -37,16 +37,31 @@
 
 /* loader spinner */
 .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
     animation: spin 500ms linear infinite;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
+/* overide grid bootstrap */
+.col-xs-1 {
+    width: 14%;
+}
+@media (min-width: 768px) {
+    .col-sm-1 {
+        width: 14%;
+    }
+}
